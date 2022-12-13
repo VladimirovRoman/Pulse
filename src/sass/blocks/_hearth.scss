@@ -1,0 +1,44 @@
+.hearth {
+	min-height: 473px;
+	background: #f6f6f6;
+	padding: 73px 0 65px 0;
+	&__title {
+		color: #0d0d0d;
+		text-align: center;
+		font-weight: 700;
+		font-size: 30px;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+	}
+	&__icons {
+		min-width: 950px;
+		display: flex;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__icon {
+		margin-right: 65px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 35px;
+	}
+	strong {
+		margin-top: 35px;
+		color: #0d0d0d;
+		font-weight: 700;
+		font-size: 18px;
+	}
+	p {
+		margin-top: 20px;
+		font-weight: 300;
+		font-size: 14px;
+		span {
+			color: #ff0000;
+		}
+	}
+}
