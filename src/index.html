@@ -6,11 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
 		<link rel="stylesheet" href="css/font.css" />
+		<link rel="stylesheet" href="css/slick.css" />
 		<link rel="stylesheet" href="css/style.min.css" />
 		<title>Pulse</title>
 	</head>
 	<body>
-		<div class="promo">
+		<section class="promo">
 			<div class="container">
 				<header class="header">
 					<a href="#" class="header__logo">
@@ -52,11 +53,11 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="hearth">
+		<section class="hearth">
 			<div class="container">
-				<div class="hearth__title">Наши преимущества</div>
+				<div class="title">Наши преимущества</div>
 				<div class="hearth__icons">
 					<div class="hearth__icon">
 						<img src="icons/advantages/cup.png" alt="" />
@@ -71,20 +72,73 @@
 						<img src="icons/advantages/heart.png" alt="" />
 						<strong> Заботимся о здоровье</strong>
 						<p>
-							Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
+							Мы работаем для того, чтобы Ваши занятия спортом шли на пользу
+							Вашему здоровью и были в радость Вам и Вашим близким!
 						</p>
 					</div>
 					<div class="hearth__icon">
 						<img src="icons/advantages/shoe.png" alt="" />
 						<strong> Учим бегать</strong>
 						<p>
-							Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - <span>I LOVE RUNNING.</span>
+							Помогаем с обучением правильной технике бега! Дружим с крупнейшей
+							школой бега в России - <span>I LOVE RUNNING.</span>
 						</p>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		
+		<section class="consultation">
+			<div class="container">
+				<h2 class="title title_left">
+					Получите бесплатную консультацию <br />
+					по подбору пульсометра
+				</h2>
+				<div class="consultation__text">
+					Просто заполните форму заявки <br />
+					и мы перезвоним вам в течении 10 минут
+				</div>
+
+				<form class="feed-form" action="#">
+					<input name="name" required placeholder="Ваше имя" type="text" />
+					<input
+						name="phone"
+						required
+						placeholder="Ваш телефон"
+						type="number"
+					/>
+					<input name="email" required placeholder="Ваш E-mail" ype="email" />
+
+					<button class="button button_submit">заказать консультацию</button>
+				</form>
+			</div>
+		</section>
+
+		<section class="carousel">
+			<div class="container">
+				<div class="carousel__inner">
+					<div>
+						<img src="img/slide_1.jpg" alt="slide" />
+					</div>
+					<div>
+						<img src="img/slide_2.jpg" alt="slide" />
+					</div>
+					<div>
+						<img src="img/slide_3.jpg" alt="slide" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script
+			type="text/javascript"
+			src="https://code.jquery.com/jquery-1.11.0.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+		></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
