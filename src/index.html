@@ -141,7 +141,7 @@
 					<li class="catalog__tab"><div>для триатлона</div></li>
 				</ul>
 
-				<div class="catalog__content">
+				<div class="catalog__content catalog__content_active">
 					<div class="catalog-item">
 						<div class="catalog-item__wrapper">
 							<div class="catalog-item__content catalog-item__content_active">
@@ -329,6 +329,7 @@
 									Также Вы увидите информацию о расходе калорий за тренировку;
 								</li>
 								<li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+								<a href="#" class="catalog-item__back">назад</a>
 							</ul>
 						</div>
 						<hr />
@@ -509,6 +510,120 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="reviews">
+			<div class="container">
+				<h2 class="title">отзывы клиентов</h2>
+				<div class="reviews__wrapper">
+					<img src="img/feed_1.png" alt="feed" class="reviews__wrapper__logo" />
+					<div class="reviews__descr">
+						<h2 class="reviews__descr__title">
+							Ирина Иванченко
+							<span>2 полумарафона</span>
+						</h2>
+
+						<div class="reviews__descr__text">
+							Не знала, что себе купить - обратилась к ребятам из RunSmart -
+							подобрали пульсометр, который подошёл именно под мои цели и
+							финансовые возможности.Через некоторое время решила обновить
+							гаджет - не раздумывая обратилась туда же.
+						</div>
+						<div class="reviews__descr__footer">
+							Новые цели - новый гаджет! <br />
+							<br />
+							Спасибо, RunSmart!
+						</div>
+					</div>
+				</div>
+
+				<div class="reviews__wrapper">
+					<img src="img/feed_2.png" alt="feed" class="reviews__wrapper__logo" />
+					<div class="reviews__descr">
+						<h2 class="reviews__descr__title">
+							Ирина Иванченко
+							<span>1 полумарафона</span>
+						</h2>
+
+						<div class="reviews__descr__text">
+							Крутая штука-пульсометр. Обычно без них бегал. Оказывается только
+							хуже себе делал. <br />
+							Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе
+							провели первую тренировку, научили пользоваться новым гаджетом.
+							Также объяснили основы анатомии, составили план тренировок на
+							месяц вперёд.<br />
+							<br />
+							С ними подготовился к своему первому полумарафону! Спасибо!!!
+						</div>
+					</div>
+				</div>
+
+				<div class="reviews__wrapper">
+					<img src="img/feed_3.png" alt="feed" class="reviews__wrapper__logo" />
+					<div class="reviews__descr">
+						<h2 class="reviews__descr__title">
+							Ирина Иванченко
+							<span>2 полумарафона</span>
+						</h2>
+
+						<div class="reviews__descr__text">
+							Долго не могла начать бегать, т.к. до этого несколько раз
+							начинала, но становилось тяжело и я бросала. От друзей услышала о
+							RunSmart и о беге с контролем пульса и решила попробовать.<br /><br />
+							Позвонила, ребята поинтересовались моими целями и подобрали очень
+							интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом!
+							Пробежала уже 2 полумарафона и несколько более коротких забегов и
+							не намерена останавливаться!<br /><br />Спасибо!!!
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.43048007664!2d37.646996!3d55.768395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1671027340505!5m2!1sru!2sru"
+				width="100%"
+				height="630"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
+
+			<div class="footer__info">
+				<address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
+				<a href="tel:+74999228974" class="footer__phone">8 (499) 922-89-74</a>
+				<div class="footer__social">
+					<a href="#" class="footer__social-item"
+						><img src="icons/facebook.svg" alt="facebook" /></a
+					><a href="#" class="footer__social-item"
+						><img src="icons/instagram.svg" alt="instagram" /></a
+					><a href="#" class="footer__social-item"
+						><img src="icons/pinterest.svg" alt="pinterest"
+					/></a>
+				</div>
+			</div>
+		</footer>
+		<div class="overlay">
+			<div class="modal">
+				<div class="modal__close">&times;</div>
+				<div class="modal__subtitle"></div>
+				<div class="modal__text"></div>
+				
+				<form class="feed-form" action="#">
+					<input name="name" required placeholder="Ваше имя" type="text" />
+					<input
+						name="phone"
+						required
+						placeholder="Ваш телефон"
+						type="number"
+					/>
+					<input name="email" required placeholder="Ваш E-mail" ype="email" />
+
+					<button class="button button_submit">заказать консультацию</button>
+				</form>
+			</div>
+		</div>
 
 		<script
 			type="text/javascript"

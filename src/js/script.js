@@ -36,4 +36,19 @@ $(document).ready(function () {
 			);
 		});
 	})(jQuery);
+
+	function toggleSlide(itemClass) {
+		$(itemClass).each(function (i) {
+			$(this).on('click', function (e) {
+				e.preventDefault();
+				$('.catalog-item__content')
+					.eq(i)
+					.toggleClass('catalog-item__content_active');
+				$('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+			});
+		});
+	}
+
+	toggleSlide('.catalog-item__back');
+	toggleSlide('.catalog-item__link');
 });
