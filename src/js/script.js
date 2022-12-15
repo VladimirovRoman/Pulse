@@ -53,6 +53,43 @@ $(document).ready(function () {
 	toggleSlide('.catalog-item__link');
 
 	$('[data-modal=consultation]').on('click', function () {
-		$('.overlay, #consultation').fadeIn();
+		$('.overlay, #consultation').fadeIn('slow');
 	});
+
+	$('.modal__close').on('click', function () {
+		$('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+	});
+
+	$('.button_mini').each(function (i) {
+		$(this).on('click', function () {
+			$('#order .modal__text').text($('.catalog-item__subtitle').eq(i).text());
+			$('.overlay, #order').fadeIn('slow');
+		});
+	});
+
+	function validateForm(form) {
+		$(form).validate({
+			rules: {
+				name: 'required',
+				phone: 'required',
+				email: {
+					required: true,
+					email: true,
+				},
+			},
+			messages: {
+				name: 'Пожалуйста, введите имя!',
+				phone: 'Пожалуйста, введите номер телефона!',
+				email: {
+					required: 'Пожалуйста, введите почтовый адрес',
+					email: 'Неправильно введен адрес почты',
+				},
+			},
+		});
+	}
+	validateForm('#consultation-form');
+	validateForm('#consultation form');
+	validateForm('#order form');
+
+	$('input[name=phone]').mask('+7(999) 999-99-99');
 });
