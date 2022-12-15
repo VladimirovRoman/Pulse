@@ -51,4 +51,8 @@ $(document).ready(function () {
 
 	toggleSlide('.catalog-item__back');
 	toggleSlide('.catalog-item__link');
+
+	$('[data-modal=consultation]').on('click', function () {
+		$('.overlay, #consultation').fadeIn();
+	});
 });
